@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# OS / editor junk
+# ---------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+.cursor/
+.vscode/
+.idea/
+
+# ---------------------------------------------------------------
+# Data (DementiaBank audio is licensed — never commit it)
+# ---------------------------------------------------------------
+data/
+logs/
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.npy
+*.npz
+
+# Generated label / manifest CSVs
+chunk_labels.csv
+clip_labels.csv
+labels.csv
+failed_files.csv
+missing_wavs*.csv
+duplicates.csv
+*.log
+
+# ---------------------------------------------------------------
+# Model checkpoints (regenerate with train_cv5.py)
+# The small *_config.json files next to them are kept.
+# ---------------------------------------------------------------
+*.pth
+*.pt
+*.ckpt
+
+# ---------------------------------------------------------------
+# Secrets
+# ---------------------------------------------------------------
+.env
+*.env
+
+# ---------------------------------------------------------------
+# Accidental duplicates
+# ---------------------------------------------------------------
+* - Copy.*
