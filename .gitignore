@@ -17,6 +17,7 @@ env/
 Thumbs.db
 desktop.ini
 .cursor/
+.cursorignore
 .vscode/
 .idea/
 
@@ -47,6 +48,7 @@ duplicates.csv
 # Model checkpoints (regenerate with train_cv5.py)
 # ---------------------------------------------------------------
 models/
+poster_outputs/
 *.pth
 *.pt
 *.ckpt

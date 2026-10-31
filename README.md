@@ -19,7 +19,7 @@ The two embeddings are concatenated and passed to a small classifier (Control vs
 | F1        | 0.819 | 0.136 |
 | F2        | 0.878 | 0.093 |
 
-Pooled ROC-AUC is **0.91** and PR-AP is **0.90**. Ablations show the fusion matters. Log-mel alone reaches 0.49 accuracy (AUC 0.51), and eGeMAPS alone reaches 0.49 accuracy (AUC 0.49). Full figures and CSVs are in [`poster_outputs/`](poster_outputs/).
+Pooled ROC-AUC is **0.91** and PR-AP is **0.90**. Ablations show the fusion matters. Log-mel alone reaches 0.49 accuracy (AUC 0.51), and eGeMAPS alone reaches 0.49 accuracy (AUC 0.49). `test_cv5.py` regenerates the full figures and per-fold CSVs.
 
 Early stopping and model selection use **F2**, which weights recall over precision because missing an AD case costs more than a false alarm.
 
