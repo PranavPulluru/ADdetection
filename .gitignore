@@ -45,8 +45,8 @@ duplicates.csv
 
 # ---------------------------------------------------------------
 # Model checkpoints (regenerate with train_cv5.py)
-# The small *_config.json files next to them are kept.
 # ---------------------------------------------------------------
+models/
 *.pth
 *.pt
 *.ckpt
@@ -61,3 +61,16 @@ duplicates.csv
 # Accidental duplicates
 # ---------------------------------------------------------------
 * - Copy.*
+
+# ---------------------------------------------------------------
+# Local-only scripts (visualization + one-off utilities)
+# ---------------------------------------------------------------
+egemaps_viz.py
+egemaps_vector_png.py
+posterspectrogram.py
+graphsTest.py
+dupes.py
+duplicates.py
+import os.py
+missing.py
+csv_something.py

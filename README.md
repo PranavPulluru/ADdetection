@@ -44,7 +44,7 @@ ADmci_proj/
 └── scripts/                 # ← this repo
 ```
 
-`PROJECT_ROOT` is resolved as the parent of `scripts/`. A few scripts (`clean_files.py`, `no_chunks/eGeMAPS-clips.py`, `missing.py`, `dupes.py`) still hardcode absolute Windows paths, so edit those before running them on another machine.
+`PROJECT_ROOT` is resolved as the parent of `scripts/`. A few scripts (`clean_files.py`, `no_chunks/eGeMAPS-clips.py`) still hardcode absolute Windows paths, so edit those before running them on another machine.
 
 ## Pipeline
 
@@ -67,7 +67,6 @@ python train_cv5.py                         # → models/cv5_fullclip_fold{1..5}
 
 # 5. Evaluate + generate poster figures
 python test_cv5.py                          # → poster_outputs/
-python egemaps_viz.py                       # eGeMAPS effect sizes, PCA, t-SNE
 ```
 
 ## Files
@@ -83,7 +82,6 @@ python egemaps_viz.py                       # eGeMAPS effect sizes, PCA, t-SNE
 | `test_cv5.py` | Evaluation, ablations, ROC/PR curves, confusion matrices |
 | `clean_files.py` | Strips interviewer turns using Whisper transcripts |
 | `no_chunks/` | Full-clip feature extraction and label building |
-| `egemaps_viz.py`, `egemaps_vector_png.py` | eGeMAPS analysis plots |
 
 **Alternative / earlier approaches**
 
@@ -92,9 +90,6 @@ python egemaps_viz.py                       # eGeMAPS effect sizes, PCA, t-SNE
 | `diarize_speakers.py` | pyannote speaker diarization (needs `HF_TOKEN`), see `README_IMPROVEMENTS.md` |
 | `spectrograms.py`, `eGeMAPS.py`, `build_chunk_labels.py` | 10 s chunked feature extraction (3 s hop) |
 | `train.py`, `test.py` | Single-split chunk-level training / testing |
-| `posterspectrogram.py` | Renders spectrogram images for the poster |
-
-**Utilities:** `dupes.py`, `duplicates.py`, `import os.py` (duplicate checks), `missing.py` (labels without cleaned audio), `csv_something.py` (label CSV from diarized files).
 
 ## Setup
 
